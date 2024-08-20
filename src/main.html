@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+    <title>5팀</title>
+  </head>
+  <body>
+    <!-- 로딩 -->
+    <div id="backdrop">
+      <div id="loading"></div>
+      <p>맛있는 레시피</p>
+      <p>불러오는 중...</p>
+    </div>
+    <!-- 헤더 -->
+    <header>
+      <h1>
+        <a href="./main.html">
+          <img src="/img/header/logo.svg" alt="로고" />
+        </a>
+      </h1>
+    </header>
+    <!-- 배너 -->
+    <section id="banner-con">
+      <h1>배너:오늘 뭐 먹지 룰렛</h1>
+    </section>
+    <!-- 검색 -->
+    <section id="search-con">
+      <h1>레시피 검색</h1>
+      <input
+        id="search-input"
+        type="text"
+        placeholder="음식 이름 또는 재료로 검색하세요."
+      />
+      <button id="search-keyword-btn" class="search-keyword-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </section>
+    <!-- 카테고리-->
+    <section id="category-con">
+      <h1>카테고리</h1>
+      <div id="category-card-con">
+        <div class="category-card category-active" data-value="전체">
+          <img src="/img/main/category/all.svg" alt="전체" />
+          <span>전체</span>
+        </div>
+        <div class="category-card" data-value="밥">
+          <img src="/img/main/category/rice.svg" alt="밥" />
+          <span>밥</span>
+        </div>
+
+        <div class="category-card" data-value="반찬">
+          <img src="/img/main/category/sausages.svg" alt="반찬" />
+          <span>반찬</span>
+        </div>
+
+        <div class="category-card" data-value="국&찌개">
+          <img src="/img/main/category/soup.svg" alt="국/찌개" />
+          <span>국/찌개</span>
+        </div>
+
+        <div class="category-card" data-value="일품">
+          <img src="/img/main/category/plate.svg" alt="일품" />
+          <span>일품</span>
+        </div>
+        <div class="category-card" data-value="후식">
+          <img src="/img/main/category/deesert.svg" alt="후식" />
+          <span>후식</span>
+        </div>
+        <div class="category-card" data-value="기타">
+          <img src="/img/main/category/etc.svg" alt="기타" />
+          <span>기타</span>
+        </div>
+      </div>
+    </section>
+    <!-- 카드 리스트 -->
+    <section id="recipe-con">
+      <h1>레시피 카드 리스트</h1>
+      <p id="no-result" class="d-none">검색 결과가 존재하지 않습니다.</p>
+      <ul id="recipe-card-list">
+        <li>
+          <img src="/img/main/cardList/card-header.png" alt="레시피 이미지" />
+          <div class="recipe-info">
+            <strong>저염 된장으로 맛을 낸 황태해장국</strong>
+            <div class="recipe-detail-info">
+              <span>100kcal</span>
+              <button class="category-btn">국/찌개</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div id="recipe-card-pagnation">
+        <button id="prev-page" class="prev-page"></button>
+        <div id="page-number-list" class="page-number-list">
+          <div class="page-number-btn page-active">1</div>
+        </div>
+        <button id="next-page" class="next-page"></button>
+      </div>
+    </section>
+    <!-- 푸터 -->
+    <footer>
+      <div id="share-con">
+        <a href="https://www.facebook.com/" class="facebook-icon"></a>
+        <a href="https://www.instagram.com/" class="instagram-icon"></a>
+        <a href="https://www.google.com/" class="google-icon"></a>
+      </div>
+    </footer>
+  </body>
+</html>

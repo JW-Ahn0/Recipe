@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="detail.css" />
+    <script src="detail.js" defer></script>
+    <title>5팀</title>
+  </head>
+  <body>
+    <!-- 로딩 -->
+    <div id="backdrop">
+      <div id="loading"></div>
+      <p>맛있는 레시피</p>
+      <p>불러오는 중...</p>
+    </div>
+    <!-- 헤더 -->
+    <header>
+      <h1>
+        <a href="./main.html">
+          <img src="/img/header/logo.svg" alt="로고" />
+        </a>
+      </h1>
+    </header>
+    <main>
+      <section id="title-con">
+        <label id="reciepe-category" class="p-btn">로딩</label>
+        <div id="title-info-con">
+          <h1 id="recipe-title">로딩중입니다.</h1>
+          <div id="extra-con">
+            <button id="book-mark-btn" class="d-none"></button>
+            <button id="share-btn" class="d-none"></button>
+          </div>
+        </div>
+      </section>
+      <section id="detail-con">
+        <h1>요리 재료와 요리에 대한 정보</h1>
+        <section id="recipe-info-con">
+          <h1>요리 사진과 재료 리스트</h1>
+          <img
+            id="recipe-main-img"
+            src="/img/detail/1280x960.png"
+            alt="요리 메인 이미지"
+          />
+          <div id="ingredient-con">
+            <h2>재료</h2>
+            <ul id="ingredient-list">
+              <li>
+                <input id="ingredient-item1" type="checkbox" />
+                <label for="ingredient-item1">재료를 불러오는 중이예요</label>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="recipe-nutrient-tip">
+          <h1>영양성분 & 저감 요리법 TIP</h1>
+          <div id="nutrient">
+            <h2>영양성분</h2>
+            <div id="kcal-con" class="nutrient-con">
+              <span id="kcal-name" class="nutrient-name">칼로리</span>
+              <span id="kcal-value" class="nutrient-value">0kcal</span>
+            </div>
+            <div id="car-con" class="nutrient-con">
+              <span id="car-name" class="nutrient-name">탄수화물</span>
+              <span id="car-value" class="nutrient-value">0g</span>
+            </div>
+            <div id="fat-con" class="nutrient-con">
+              <span id="fat-name" class="nutrient-name">지방</span>
+              <span id="fat-value" class="nutrient-value">0g</span>
+            </div>
+            <div id="pro-con" class="nutrient-con">
+              <span id="pro-name" class="nutrient-name">단백질</span>
+              <span id="pro-value" class="nutrient-value">0g</span>
+            </div>
+            <div id="na-con" class="nutrient-con">
+              <span id="na-name" class="nutrient-name">나트륨</span>
+              <span id="na-value" class="nutrient-value">0mg</span>
+            </div>
+          </div>
+          <div id="tip-con">
+            <h2>저감 요리법 TIP</h2>
+            <p id="tip-p">로딩 중입니다.</p>
+          </div>
+        </section>
+      </section>
+      <section id="recipe-order-list-con">
+        <h1>조리 순서</h1>
+        <ul id="recipe-order-list">
+          <li class="recipe-order-card">
+            <img src="/img/detail/orderList/sample.png" alt="레시피 이미지" />
+            <div class="recipe-explain-con">
+              <span class="number-design">1</span>
+              <p>손질된 새우를 끓는 물에 데쳐 건진다.</p>
+            </div>
+          </li>
+          <li class="recipe-order-card">
+            <img src="/img/detail/orderList/sample.png" alt="레시피 이미지" />
+            <div class="recipe-explain-con">
+              <span class="number-design">1</span>
+              <p>손질된 새우를 끓는 물에 데쳐 건진다.</p>
+            </div>
+          </li>
+          <li class="recipe-order-card">
+            <img src="/img/detail/orderList/sample.png" alt="레시피 이미지" />
+            <div class="recipe-explain-con">
+              <span class="number-design">1</span>
+              <p>손질된 새우를 끓는 물에 데쳐 건진다.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="back-main-con">
+        <a href="./main.html" id="back-to-main-btn" class="p-btn">목록으로</a>
+      </section>
+    </main>
+    <!-- 푸터 -->
+    <footer>
+      <div id="share-con">
+        <a href="https://www.facebook.com/" class="facebook-icon"></a>
+        <a href="https://www.instagram.com/" class="instagram-icon"></a>
+        <a href="https://www.google.com/" class="google-icon"></a>
+      </div>
+    </footer>
+  </body>
+</html>
